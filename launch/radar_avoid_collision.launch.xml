@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="autoware_radar_avoid_collision" exec="autoware_radar_avoid_collision_node" output="both">
+    <param name="avoid_distance" value="35.0"/>
+    <param name="avoid_angle" value="0.35"/>
+    <remap from="input_radar_scan" to="/detections"/>
+  </node>
+</launch>
